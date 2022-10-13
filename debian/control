@@ -1,0 +1,33 @@
+Source: node-gulp-plumber
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , mocha <!nocheck>
+ , node-chalk <!nocheck>
+ , node-duplexer <!nocheck>
+ , node-fancy-log <!nocheck>
+ , node-gulp <!nocheck>
+ , node-plugin-error <!nocheck>
+ , node-should <!nocheck>
+ , node-split <!nocheck>
+ , node-through <!nocheck>
+ , node-through2 (>= 2) <!nocheck>
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/js-team/node-gulp-plumber
+Vcs-Git: https://salsa.debian.org/js-team/node-gulp-plumber.git
+Homepage: https://github.com/floatdrop/gulp-plumber
+Rules-Requires-Root: no
+
+Package: node-gulp-plumber
+Architecture: all
+Depends: ${misc:Depends}
+ , node-chalk
+ , node-fancy-log
+ , node-plugin-error
+ , node-through2 (>= 2)
+Description: Prevent pipe breaking caused by errors from gulp plugins
+ Node.js is an event-based server-side JavaScript engine.

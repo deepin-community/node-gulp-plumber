@@ -1,0 +1,35 @@
+node-gulp-plumber (1.2.1-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from deprecated 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Modernize debian/watch
+  * Use dh-sequence-nodejs auto install (Closes: #974397)
+  * New upstream version 1.2.1
+  * Enable upstream test using mocha
+  * Update dependencies:
+    + remove node-gulp-util
+    + add node-chalk, node-fancy-log, node-plugin-error
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 14 Jan 2021 16:39:48 +0100
+
+node-gulp-plumber (1.1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #848649)
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 19 Dec 2016 13:58:23 +0530
